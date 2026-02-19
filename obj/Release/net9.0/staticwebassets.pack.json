@@ -1,0 +1,605 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\cs66\\end\\BookMyServiceBE\\wwwroot\\assets\\index-BVX6Lm_Q.css",
+      "PackagePath": "staticwebassets\\assets\\index-BVX6Lm_Q.css"
+    },
+    {
+      "Id": "C:\\cs66\\end\\BookMyServiceBE\\wwwroot\\assets\\index-Fxa9VHhp.js",
+      "PackagePath": "staticwebassets\\assets\\index-Fxa9VHhp.js"
+    },
+    {
+      "Id": "C:\\cs66\\end\\BookMyServiceBE\\wwwroot\\assets\\inter-cyrillic-400-normal-HOLc17fK.woff",
+      "PackagePath": "staticwebassets\\assets\\inter-cyrillic-400-normal-HOLc17fK.woff"
+    },
+    {
+      "Id": "C:\\cs66\\end\\BookMyServiceBE\\wwwroot\\assets\\inter-cyrillic-400-normal-obahsSVq.woff2",
+      "PackagePath": "staticwebassets\\assets\\inter-cyrillic-400-normal-obahsSVq.woff2"
+    },
+    {
+      "Id": "C:\\cs66\\end\\BookMyServiceBE\\wwwroot\\assets\\inter-cyrillic-500-normal-BasfLYem.woff2",
+      "PackagePath": "staticwebassets\\assets\\inter-cyrillic-500-normal-BasfLYem.woff2"
+    },
+    {
+      "Id": "C:\\cs66\\end\\BookMyServiceBE\\wwwroot\\assets\\inter-cyrillic-500-normal-CxZf_p3X.woff",
+      "PackagePath": "staticwebassets\\assets\\inter-cyrillic-500-normal-CxZf_p3X.woff"
+    },
+    {
+      "Id": "C:\\cs66\\end\\BookMyServiceBE\\wwwroot\\assets\\inter-cyrillic-600-normal-4D_pXhcN.woff",
+      "PackagePath": "staticwebassets\\assets\\inter-cyrillic-600-normal-4D_pXhcN.woff"
+    },
+    {
+      "Id": "C:\\cs66\\end\\BookMyServiceBE\\wwwroot\\assets\\inter-cyrillic-600-normal-CWCymEST.woff2",
+      "PackagePath": "staticwebassets\\assets\\inter-cyrillic-600-normal-CWCymEST.woff2"
+    },
+    {
+      "Id": "C:\\cs66\\end\\BookMyServiceBE\\wwwroot\\assets\\inter-cyrillic-700-normal-CjBOestx.woff2",
+      "PackagePath": "staticwebassets\\assets\\inter-cyrillic-700-normal-CjBOestx.woff2"
+    },
+    {
+      "Id": "C:\\cs66\\end\\BookMyServiceBE\\wwwroot\\assets\\inter-cyrillic-700-normal-DrXBdSj3.woff",
+      "PackagePath": "staticwebassets\\assets\\inter-cyrillic-700-normal-DrXBdSj3.woff"
+    },
+    {
+      "Id": "C:\\cs66\\end\\BookMyServiceBE\\wwwroot\\assets\\inter-cyrillic-800-normal-C7MGvYyJ.woff2",
+      "PackagePath": "staticwebassets\\assets\\inter-cyrillic-800-normal-C7MGvYyJ.woff2"
+    },
+    {
+      "Id": "C:\\cs66\\end\\BookMyServiceBE\\wwwroot\\assets\\inter-cyrillic-800-normal-CCHyn08d.woff",
+      "PackagePath": "staticwebassets\\assets\\inter-cyrillic-800-normal-CCHyn08d.woff"
+    },
+    {
+      "Id": "C:\\cs66\\end\\BookMyServiceBE\\wwwroot\\assets\\inter-cyrillic-ext-400-normal-BQZuk6qB.woff2",
+      "PackagePath": "staticwebassets\\assets\\inter-cyrillic-ext-400-normal-BQZuk6qB.woff2"
+    },
+    {
+      "Id": "C:\\cs66\\end\\BookMyServiceBE\\wwwroot\\assets\\inter-cyrillic-ext-400-normal-DQukG94-.woff",
+      "PackagePath": "staticwebassets\\assets\\inter-cyrillic-ext-400-normal-DQukG94-.woff"
+    },
+    {
+      "Id": "C:\\cs66\\end\\BookMyServiceBE\\wwwroot\\assets\\inter-cyrillic-ext-500-normal-B0yAr1jD.woff2",
+      "PackagePath": "staticwebassets\\assets\\inter-cyrillic-ext-500-normal-B0yAr1jD.woff2"
+    },
+    {
+      "Id": "C:\\cs66\\end\\BookMyServiceBE\\wwwroot\\assets\\inter-cyrillic-ext-500-normal-BmqWE9Dz.woff",
+      "PackagePath": "staticwebassets\\assets\\inter-cyrillic-ext-500-normal-BmqWE9Dz.woff"
+    },
+    {
+      "Id": "C:\\cs66\\end\\BookMyServiceBE\\wwwroot\\assets\\inter-cyrillic-ext-600-normal-Bcila6Z-.woff",
+      "PackagePath": "staticwebassets\\assets\\inter-cyrillic-ext-600-normal-Bcila6Z-.woff"
+    },
+    {
+      "Id": "C:\\cs66\\end\\BookMyServiceBE\\wwwroot\\assets\\inter-cyrillic-ext-600-normal-Dfes3d0z.woff2",
+      "PackagePath": "staticwebassets\\assets\\inter-cyrillic-ext-600-normal-Dfes3d0z.woff2"
+    },
+    {
+      "Id": "C:\\cs66\\end\\BookMyServiceBE\\wwwroot\\assets\\inter-cyrillic-ext-700-normal-BjwYoWNd.woff2",
+      "PackagePath": "staticwebassets\\assets\\inter-cyrillic-ext-700-normal-BjwYoWNd.woff2"
+    },
+    {
+      "Id": "C:\\cs66\\end\\BookMyServiceBE\\wwwroot\\assets\\inter-cyrillic-ext-700-normal-LO58E6JB.woff",
+      "PackagePath": "staticwebassets\\assets\\inter-cyrillic-ext-700-normal-LO58E6JB.woff"
+    },
+    {
+      "Id": "C:\\cs66\\end\\BookMyServiceBE\\wwwroot\\assets\\inter-cyrillic-ext-800-normal-BZOjs1Xv.woff2",
+      "PackagePath": "staticwebassets\\assets\\inter-cyrillic-ext-800-normal-BZOjs1Xv.woff2"
+    },
+    {
+      "Id": "C:\\cs66\\end\\BookMyServiceBE\\wwwroot\\assets\\inter-cyrillic-ext-800-normal-Ca-gJeZY.woff",
+      "PackagePath": "staticwebassets\\assets\\inter-cyrillic-ext-800-normal-Ca-gJeZY.woff"
+    },
+    {
+      "Id": "C:\\cs66\\end\\BookMyServiceBE\\wwwroot\\assets\\inter-greek-400-normal-B4URO6DV.woff2",
+      "PackagePath": "staticwebassets\\assets\\inter-greek-400-normal-B4URO6DV.woff2"
+    },
+    {
+      "Id": "C:\\cs66\\end\\BookMyServiceBE\\wwwroot\\assets\\inter-greek-400-normal-q2sYcFCs.woff",
+      "PackagePath": "staticwebassets\\assets\\inter-greek-400-normal-q2sYcFCs.woff"
+    },
+    {
+      "Id": "C:\\cs66\\end\\BookMyServiceBE\\wwwroot\\assets\\inter-greek-500-normal-BIZE56-Y.woff2",
+      "PackagePath": "staticwebassets\\assets\\inter-greek-500-normal-BIZE56-Y.woff2"
+    },
+    {
+      "Id": "C:\\cs66\\end\\BookMyServiceBE\\wwwroot\\assets\\inter-greek-500-normal-Xzm54t5V.woff",
+      "PackagePath": "staticwebassets\\assets\\inter-greek-500-normal-Xzm54t5V.woff"
+    },
+    {
+      "Id": "C:\\cs66\\end\\BookMyServiceBE\\wwwroot\\assets\\inter-greek-600-normal-BZpKdvQh.woff",
+      "PackagePath": "staticwebassets\\assets\\inter-greek-600-normal-BZpKdvQh.woff"
+    },
+    {
+      "Id": "C:\\cs66\\end\\BookMyServiceBE\\wwwroot\\assets\\inter-greek-600-normal-plRanbMR.woff2",
+      "PackagePath": "staticwebassets\\assets\\inter-greek-600-normal-plRanbMR.woff2"
+    },
+    {
+      "Id": "C:\\cs66\\end\\BookMyServiceBE\\wwwroot\\assets\\inter-greek-700-normal-BUv2fZ6O.woff",
+      "PackagePath": "staticwebassets\\assets\\inter-greek-700-normal-BUv2fZ6O.woff"
+    },
+    {
+      "Id": "C:\\cs66\\end\\BookMyServiceBE\\wwwroot\\assets\\inter-greek-700-normal-C3JjAnD8.woff2",
+      "PackagePath": "staticwebassets\\assets\\inter-greek-700-normal-C3JjAnD8.woff2"
+    },
+    {
+      "Id": "C:\\cs66\\end\\BookMyServiceBE\\wwwroot\\assets\\inter-greek-800-normal-BU00tryP.woff",
+      "PackagePath": "staticwebassets\\assets\\inter-greek-800-normal-BU00tryP.woff"
+    },
+    {
+      "Id": "C:\\cs66\\end\\BookMyServiceBE\\wwwroot\\assets\\inter-greek-800-normal-CLIouy3y.woff2",
+      "PackagePath": "staticwebassets\\assets\\inter-greek-800-normal-CLIouy3y.woff2"
+    },
+    {
+      "Id": "C:\\cs66\\end\\BookMyServiceBE\\wwwroot\\assets\\inter-greek-ext-400-normal-DGGRlc-M.woff2",
+      "PackagePath": "staticwebassets\\assets\\inter-greek-ext-400-normal-DGGRlc-M.woff2"
+    },
+    {
+      "Id": "C:\\cs66\\end\\BookMyServiceBE\\wwwroot\\assets\\inter-greek-ext-400-normal-KugGGMne.woff",
+      "PackagePath": "staticwebassets\\assets\\inter-greek-ext-400-normal-KugGGMne.woff"
+    },
+    {
+      "Id": "C:\\cs66\\end\\BookMyServiceBE\\wwwroot\\assets\\inter-greek-ext-500-normal-2j5mBUwD.woff",
+      "PackagePath": "staticwebassets\\assets\\inter-greek-ext-500-normal-2j5mBUwD.woff"
+    },
+    {
+      "Id": "C:\\cs66\\end\\BookMyServiceBE\\wwwroot\\assets\\inter-greek-ext-500-normal-C4iEst2y.woff2",
+      "PackagePath": "staticwebassets\\assets\\inter-greek-ext-500-normal-C4iEst2y.woff2"
+    },
+    {
+      "Id": "C:\\cs66\\end\\BookMyServiceBE\\wwwroot\\assets\\inter-greek-ext-600-normal-B8X0CLgF.woff",
+      "PackagePath": "staticwebassets\\assets\\inter-greek-ext-600-normal-B8X0CLgF.woff"
+    },
+    {
+      "Id": "C:\\cs66\\end\\BookMyServiceBE\\wwwroot\\assets\\inter-greek-ext-600-normal-DRtmH8MT.woff2",
+      "PackagePath": "staticwebassets\\assets\\inter-greek-ext-600-normal-DRtmH8MT.woff2"
+    },
+    {
+      "Id": "C:\\cs66\\end\\BookMyServiceBE\\wwwroot\\assets\\inter-greek-ext-700-normal-BoQ6DsYi.woff",
+      "PackagePath": "staticwebassets\\assets\\inter-greek-ext-700-normal-BoQ6DsYi.woff"
+    },
+    {
+      "Id": "C:\\cs66\\end\\BookMyServiceBE\\wwwroot\\assets\\inter-greek-ext-700-normal-qfdV9bQt.woff2",
+      "PackagePath": "staticwebassets\\assets\\inter-greek-ext-700-normal-qfdV9bQt.woff2"
+    },
+    {
+      "Id": "C:\\cs66\\end\\BookMyServiceBE\\wwwroot\\assets\\inter-greek-ext-800-normal-B--PVpEC.woff2",
+      "PackagePath": "staticwebassets\\assets\\inter-greek-ext-800-normal-B--PVpEC.woff2"
+    },
+    {
+      "Id": "C:\\cs66\\end\\BookMyServiceBE\\wwwroot\\assets\\inter-greek-ext-800-normal-DUe57HfS.woff",
+      "PackagePath": "staticwebassets\\assets\\inter-greek-ext-800-normal-DUe57HfS.woff"
+    },
+    {
+      "Id": "C:\\cs66\\end\\BookMyServiceBE\\wwwroot\\assets\\inter-latin-400-normal-C38fXH4l.woff2",
+      "PackagePath": "staticwebassets\\assets\\inter-latin-400-normal-C38fXH4l.woff2"
+    },
+    {
+      "Id": "C:\\cs66\\end\\BookMyServiceBE\\wwwroot\\assets\\inter-latin-400-normal-CyCys3Eg.woff",
+      "PackagePath": "staticwebassets\\assets\\inter-latin-400-normal-CyCys3Eg.woff"
+    },
+    {
+      "Id": "C:\\cs66\\end\\BookMyServiceBE\\wwwroot\\assets\\inter-latin-500-normal-BL9OpVg8.woff",
+      "PackagePath": "staticwebassets\\assets\\inter-latin-500-normal-BL9OpVg8.woff"
+    },
+    {
+      "Id": "C:\\cs66\\end\\BookMyServiceBE\\wwwroot\\assets\\inter-latin-500-normal-Cerq10X2.woff2",
+      "PackagePath": "staticwebassets\\assets\\inter-latin-500-normal-Cerq10X2.woff2"
+    },
+    {
+      "Id": "C:\\cs66\\end\\BookMyServiceBE\\wwwroot\\assets\\inter-latin-600-normal-CiBQ2DWP.woff",
+      "PackagePath": "staticwebassets\\assets\\inter-latin-600-normal-CiBQ2DWP.woff"
+    },
+    {
+      "Id": "C:\\cs66\\end\\BookMyServiceBE\\wwwroot\\assets\\inter-latin-600-normal-LgqL8muc.woff2",
+      "PackagePath": "staticwebassets\\assets\\inter-latin-600-normal-LgqL8muc.woff2"
+    },
+    {
+      "Id": "C:\\cs66\\end\\BookMyServiceBE\\wwwroot\\assets\\inter-latin-700-normal-BLAVimhd.woff",
+      "PackagePath": "staticwebassets\\assets\\inter-latin-700-normal-BLAVimhd.woff"
+    },
+    {
+      "Id": "C:\\cs66\\end\\BookMyServiceBE\\wwwroot\\assets\\inter-latin-700-normal-Yt3aPRUw.woff2",
+      "PackagePath": "staticwebassets\\assets\\inter-latin-700-normal-Yt3aPRUw.woff2"
+    },
+    {
+      "Id": "C:\\cs66\\end\\BookMyServiceBE\\wwwroot\\assets\\inter-latin-800-normal-BYj_oED-.woff2",
+      "PackagePath": "staticwebassets\\assets\\inter-latin-800-normal-BYj_oED-.woff2"
+    },
+    {
+      "Id": "C:\\cs66\\end\\BookMyServiceBE\\wwwroot\\assets\\inter-latin-800-normal-D1mf63XC.woff",
+      "PackagePath": "staticwebassets\\assets\\inter-latin-800-normal-D1mf63XC.woff"
+    },
+    {
+      "Id": "C:\\cs66\\end\\BookMyServiceBE\\wwwroot\\assets\\inter-latin-ext-400-normal-77YHD8bZ.woff",
+      "PackagePath": "staticwebassets\\assets\\inter-latin-ext-400-normal-77YHD8bZ.woff"
+    },
+    {
+      "Id": "C:\\cs66\\end\\BookMyServiceBE\\wwwroot\\assets\\inter-latin-ext-400-normal-C1nco2VV.woff2",
+      "PackagePath": "staticwebassets\\assets\\inter-latin-ext-400-normal-C1nco2VV.woff2"
+    },
+    {
+      "Id": "C:\\cs66\\end\\BookMyServiceBE\\wwwroot\\assets\\inter-latin-ext-500-normal-BxGbmqWO.woff",
+      "PackagePath": "staticwebassets\\assets\\inter-latin-ext-500-normal-BxGbmqWO.woff"
+    },
+    {
+      "Id": "C:\\cs66\\end\\BookMyServiceBE\\wwwroot\\assets\\inter-latin-ext-500-normal-CV4jyFjo.woff2",
+      "PackagePath": "staticwebassets\\assets\\inter-latin-ext-500-normal-CV4jyFjo.woff2"
+    },
+    {
+      "Id": "C:\\cs66\\end\\BookMyServiceBE\\wwwroot\\assets\\inter-latin-ext-600-normal-CIVaiw4L.woff",
+      "PackagePath": "staticwebassets\\assets\\inter-latin-ext-600-normal-CIVaiw4L.woff"
+    },
+    {
+      "Id": "C:\\cs66\\end\\BookMyServiceBE\\wwwroot\\assets\\inter-latin-ext-600-normal-D2bJ5OIk.woff2",
+      "PackagePath": "staticwebassets\\assets\\inter-latin-ext-600-normal-D2bJ5OIk.woff2"
+    },
+    {
+      "Id": "C:\\cs66\\end\\BookMyServiceBE\\wwwroot\\assets\\inter-latin-ext-700-normal-Ca8adRJv.woff2",
+      "PackagePath": "staticwebassets\\assets\\inter-latin-ext-700-normal-Ca8adRJv.woff2"
+    },
+    {
+      "Id": "C:\\cs66\\end\\BookMyServiceBE\\wwwroot\\assets\\inter-latin-ext-700-normal-TidjK2hL.woff",
+      "PackagePath": "staticwebassets\\assets\\inter-latin-ext-700-normal-TidjK2hL.woff"
+    },
+    {
+      "Id": "C:\\cs66\\end\\BookMyServiceBE\\wwwroot\\assets\\inter-latin-ext-800-normal-BOMpwxm3.woff",
+      "PackagePath": "staticwebassets\\assets\\inter-latin-ext-800-normal-BOMpwxm3.woff"
+    },
+    {
+      "Id": "C:\\cs66\\end\\BookMyServiceBE\\wwwroot\\assets\\inter-latin-ext-800-normal-DZJjya6U.woff2",
+      "PackagePath": "staticwebassets\\assets\\inter-latin-ext-800-normal-DZJjya6U.woff2"
+    },
+    {
+      "Id": "C:\\cs66\\end\\BookMyServiceBE\\wwwroot\\assets\\inter-vietnamese-400-normal-Bbgyi5SW.woff",
+      "PackagePath": "staticwebassets\\assets\\inter-vietnamese-400-normal-Bbgyi5SW.woff"
+    },
+    {
+      "Id": "C:\\cs66\\end\\BookMyServiceBE\\wwwroot\\assets\\inter-vietnamese-400-normal-DMkecbls.woff2",
+      "PackagePath": "staticwebassets\\assets\\inter-vietnamese-400-normal-DMkecbls.woff2"
+    },
+    {
+      "Id": "C:\\cs66\\end\\BookMyServiceBE\\wwwroot\\assets\\inter-vietnamese-500-normal-DOriooB6.woff2",
+      "PackagePath": "staticwebassets\\assets\\inter-vietnamese-500-normal-DOriooB6.woff2"
+    },
+    {
+      "Id": "C:\\cs66\\end\\BookMyServiceBE\\wwwroot\\assets\\inter-vietnamese-500-normal-mJboJaSs.woff",
+      "PackagePath": "staticwebassets\\assets\\inter-vietnamese-500-normal-mJboJaSs.woff"
+    },
+    {
+      "Id": "C:\\cs66\\end\\BookMyServiceBE\\wwwroot\\assets\\inter-vietnamese-600-normal-BuLX-rYi.woff",
+      "PackagePath": "staticwebassets\\assets\\inter-vietnamese-600-normal-BuLX-rYi.woff"
+    },
+    {
+      "Id": "C:\\cs66\\end\\BookMyServiceBE\\wwwroot\\assets\\inter-vietnamese-600-normal-Cc8MFFhd.woff2",
+      "PackagePath": "staticwebassets\\assets\\inter-vietnamese-600-normal-Cc8MFFhd.woff2"
+    },
+    {
+      "Id": "C:\\cs66\\end\\BookMyServiceBE\\wwwroot\\assets\\inter-vietnamese-700-normal-BZaoP0fm.woff",
+      "PackagePath": "staticwebassets\\assets\\inter-vietnamese-700-normal-BZaoP0fm.woff"
+    },
+    {
+      "Id": "C:\\cs66\\end\\BookMyServiceBE\\wwwroot\\assets\\inter-vietnamese-700-normal-DlLaEgI2.woff2",
+      "PackagePath": "staticwebassets\\assets\\inter-vietnamese-700-normal-DlLaEgI2.woff2"
+    },
+    {
+      "Id": "C:\\cs66\\end\\BookMyServiceBE\\wwwroot\\assets\\inter-vietnamese-800-normal-Cm7tD1pz.woff2",
+      "PackagePath": "staticwebassets\\assets\\inter-vietnamese-800-normal-Cm7tD1pz.woff2"
+    },
+    {
+      "Id": "C:\\cs66\\end\\BookMyServiceBE\\wwwroot\\assets\\inter-vietnamese-800-normal-DDlpr_Ee.woff",
+      "PackagePath": "staticwebassets\\assets\\inter-vietnamese-800-normal-DDlpr_Ee.woff"
+    },
+    {
+      "Id": "C:\\cs66\\end\\BookMyServiceBE\\wwwroot\\assets\\noto-sans-thai-latin-300-normal-CDhDwrhB.woff2",
+      "PackagePath": "staticwebassets\\assets\\noto-sans-thai-latin-300-normal-CDhDwrhB.woff2"
+    },
+    {
+      "Id": "C:\\cs66\\end\\BookMyServiceBE\\wwwroot\\assets\\noto-sans-thai-latin-300-normal-cww58Gyl.woff",
+      "PackagePath": "staticwebassets\\assets\\noto-sans-thai-latin-300-normal-cww58Gyl.woff"
+    },
+    {
+      "Id": "C:\\cs66\\end\\BookMyServiceBE\\wwwroot\\assets\\noto-sans-thai-latin-400-normal-BaWBrqFP.woff2",
+      "PackagePath": "staticwebassets\\assets\\noto-sans-thai-latin-400-normal-BaWBrqFP.woff2"
+    },
+    {
+      "Id": "C:\\cs66\\end\\BookMyServiceBE\\wwwroot\\assets\\noto-sans-thai-latin-400-normal-Dh_FJjOB.woff",
+      "PackagePath": "staticwebassets\\assets\\noto-sans-thai-latin-400-normal-Dh_FJjOB.woff"
+    },
+    {
+      "Id": "C:\\cs66\\end\\BookMyServiceBE\\wwwroot\\assets\\noto-sans-thai-latin-500-normal-BC04jsmm.woff",
+      "PackagePath": "staticwebassets\\assets\\noto-sans-thai-latin-500-normal-BC04jsmm.woff"
+    },
+    {
+      "Id": "C:\\cs66\\end\\BookMyServiceBE\\wwwroot\\assets\\noto-sans-thai-latin-500-normal-fyBKClF1.woff2",
+      "PackagePath": "staticwebassets\\assets\\noto-sans-thai-latin-500-normal-fyBKClF1.woff2"
+    },
+    {
+      "Id": "C:\\cs66\\end\\BookMyServiceBE\\wwwroot\\assets\\noto-sans-thai-latin-600-normal-CemcjnVR.woff2",
+      "PackagePath": "staticwebassets\\assets\\noto-sans-thai-latin-600-normal-CemcjnVR.woff2"
+    },
+    {
+      "Id": "C:\\cs66\\end\\BookMyServiceBE\\wwwroot\\assets\\noto-sans-thai-latin-600-normal-Dbc-dNO6.woff",
+      "PackagePath": "staticwebassets\\assets\\noto-sans-thai-latin-600-normal-Dbc-dNO6.woff"
+    },
+    {
+      "Id": "C:\\cs66\\end\\BookMyServiceBE\\wwwroot\\assets\\noto-sans-thai-latin-700-normal-C4AMFKt5.woff",
+      "PackagePath": "staticwebassets\\assets\\noto-sans-thai-latin-700-normal-C4AMFKt5.woff"
+    },
+    {
+      "Id": "C:\\cs66\\end\\BookMyServiceBE\\wwwroot\\assets\\noto-sans-thai-latin-700-normal-_dn-40wb.woff2",
+      "PackagePath": "staticwebassets\\assets\\noto-sans-thai-latin-700-normal-_dn-40wb.woff2"
+    },
+    {
+      "Id": "C:\\cs66\\end\\BookMyServiceBE\\wwwroot\\assets\\noto-sans-thai-latin-ext-300-normal-B_8EUXdu.woff2",
+      "PackagePath": "staticwebassets\\assets\\noto-sans-thai-latin-ext-300-normal-B_8EUXdu.woff2"
+    },
+    {
+      "Id": "C:\\cs66\\end\\BookMyServiceBE\\wwwroot\\assets\\noto-sans-thai-latin-ext-300-normal-CKUPRj2g.woff",
+      "PackagePath": "staticwebassets\\assets\\noto-sans-thai-latin-ext-300-normal-CKUPRj2g.woff"
+    },
+    {
+      "Id": "C:\\cs66\\end\\BookMyServiceBE\\wwwroot\\assets\\noto-sans-thai-latin-ext-400-normal-B-1H0YkH.woff",
+      "PackagePath": "staticwebassets\\assets\\noto-sans-thai-latin-ext-400-normal-B-1H0YkH.woff"
+    },
+    {
+      "Id": "C:\\cs66\\end\\BookMyServiceBE\\wwwroot\\assets\\noto-sans-thai-latin-ext-400-normal-nBP59pVw.woff2",
+      "PackagePath": "staticwebassets\\assets\\noto-sans-thai-latin-ext-400-normal-nBP59pVw.woff2"
+    },
+    {
+      "Id": "C:\\cs66\\end\\BookMyServiceBE\\wwwroot\\assets\\noto-sans-thai-latin-ext-500-normal-B-ZWb8SZ.woff2",
+      "PackagePath": "staticwebassets\\assets\\noto-sans-thai-latin-ext-500-normal-B-ZWb8SZ.woff2"
+    },
+    {
+      "Id": "C:\\cs66\\end\\BookMyServiceBE\\wwwroot\\assets\\noto-sans-thai-latin-ext-500-normal-CrEHO7C8.woff",
+      "PackagePath": "staticwebassets\\assets\\noto-sans-thai-latin-ext-500-normal-CrEHO7C8.woff"
+    },
+    {
+      "Id": "C:\\cs66\\end\\BookMyServiceBE\\wwwroot\\assets\\noto-sans-thai-latin-ext-600-normal-PkMZo0xa.woff",
+      "PackagePath": "staticwebassets\\assets\\noto-sans-thai-latin-ext-600-normal-PkMZo0xa.woff"
+    },
+    {
+      "Id": "C:\\cs66\\end\\BookMyServiceBE\\wwwroot\\assets\\noto-sans-thai-latin-ext-600-normal-maHHBsez.woff2",
+      "PackagePath": "staticwebassets\\assets\\noto-sans-thai-latin-ext-600-normal-maHHBsez.woff2"
+    },
+    {
+      "Id": "C:\\cs66\\end\\BookMyServiceBE\\wwwroot\\assets\\noto-sans-thai-latin-ext-700-normal-uJk63onE.woff2",
+      "PackagePath": "staticwebassets\\assets\\noto-sans-thai-latin-ext-700-normal-uJk63onE.woff2"
+    },
+    {
+      "Id": "C:\\cs66\\end\\BookMyServiceBE\\wwwroot\\assets\\noto-sans-thai-latin-ext-700-normal-xdwl2Xg6.woff",
+      "PackagePath": "staticwebassets\\assets\\noto-sans-thai-latin-ext-700-normal-xdwl2Xg6.woff"
+    },
+    {
+      "Id": "C:\\cs66\\end\\BookMyServiceBE\\wwwroot\\assets\\noto-sans-thai-thai-300-normal-CZ5rdV3G.woff2",
+      "PackagePath": "staticwebassets\\assets\\noto-sans-thai-thai-300-normal-CZ5rdV3G.woff2"
+    },
+    {
+      "Id": "C:\\cs66\\end\\BookMyServiceBE\\wwwroot\\assets\\noto-sans-thai-thai-300-normal-X6PNm1_R.woff",
+      "PackagePath": "staticwebassets\\assets\\noto-sans-thai-thai-300-normal-X6PNm1_R.woff"
+    },
+    {
+      "Id": "C:\\cs66\\end\\BookMyServiceBE\\wwwroot\\assets\\noto-sans-thai-thai-400-normal-BEOmKAI1.woff2",
+      "PackagePath": "staticwebassets\\assets\\noto-sans-thai-thai-400-normal-BEOmKAI1.woff2"
+    },
+    {
+      "Id": "C:\\cs66\\end\\BookMyServiceBE\\wwwroot\\assets\\noto-sans-thai-thai-400-normal-Dxb_unuU.woff",
+      "PackagePath": "staticwebassets\\assets\\noto-sans-thai-thai-400-normal-Dxb_unuU.woff"
+    },
+    {
+      "Id": "C:\\cs66\\end\\BookMyServiceBE\\wwwroot\\assets\\noto-sans-thai-thai-500-normal-BOGXO2tw.woff",
+      "PackagePath": "staticwebassets\\assets\\noto-sans-thai-thai-500-normal-BOGXO2tw.woff"
+    },
+    {
+      "Id": "C:\\cs66\\end\\BookMyServiceBE\\wwwroot\\assets\\noto-sans-thai-thai-500-normal-CU_X86GQ.woff2",
+      "PackagePath": "staticwebassets\\assets\\noto-sans-thai-thai-500-normal-CU_X86GQ.woff2"
+    },
+    {
+      "Id": "C:\\cs66\\end\\BookMyServiceBE\\wwwroot\\assets\\noto-sans-thai-thai-600-normal-CmgB8_JK.woff",
+      "PackagePath": "staticwebassets\\assets\\noto-sans-thai-thai-600-normal-CmgB8_JK.woff"
+    },
+    {
+      "Id": "C:\\cs66\\end\\BookMyServiceBE\\wwwroot\\assets\\noto-sans-thai-thai-600-normal-Cs73sVjl.woff2",
+      "PackagePath": "staticwebassets\\assets\\noto-sans-thai-thai-600-normal-Cs73sVjl.woff2"
+    },
+    {
+      "Id": "C:\\cs66\\end\\BookMyServiceBE\\wwwroot\\assets\\noto-sans-thai-thai-700-normal-C9ISMlQq.woff",
+      "PackagePath": "staticwebassets\\assets\\noto-sans-thai-thai-700-normal-C9ISMlQq.woff"
+    },
+    {
+      "Id": "C:\\cs66\\end\\BookMyServiceBE\\wwwroot\\assets\\noto-sans-thai-thai-700-normal-Cm52XUnT.woff2",
+      "PackagePath": "staticwebassets\\assets\\noto-sans-thai-thai-700-normal-Cm52XUnT.woff2"
+    },
+    {
+      "Id": "C:\\cs66\\end\\BookMyServiceBE\\wwwroot\\images\\placeholder-avatar.svg",
+      "PackagePath": "staticwebassets\\images\\placeholder-avatar.svg"
+    },
+    {
+      "Id": "C:\\cs66\\end\\BookMyServiceBE\\wwwroot\\images\\placeholder-service.svg",
+      "PackagePath": "staticwebassets\\images\\placeholder-service.svg"
+    },
+    {
+      "Id": "C:\\cs66\\end\\BookMyServiceBE\\wwwroot\\index.html",
+      "PackagePath": "staticwebassets\\index.html"
+    },
+    {
+      "Id": "C:\\cs66\\end\\BookMyServiceBE\\wwwroot\\uploads\\kyc\\user-21\\43f1233c200b41c5b21f053a52be8956.jpg",
+      "PackagePath": "staticwebassets\\uploads\\kyc\\user-21\\43f1233c200b41c5b21f053a52be8956.jpg"
+    },
+    {
+      "Id": "C:\\cs66\\end\\BookMyServiceBE\\wwwroot\\uploads\\kyc\\user-21\\d8f99138709644b4b23ba1ba7145ec3a.jpg",
+      "PackagePath": "staticwebassets\\uploads\\kyc\\user-21\\d8f99138709644b4b23ba1ba7145ec3a.jpg"
+    },
+    {
+      "Id": "C:\\cs66\\end\\BookMyServiceBE\\wwwroot\\uploads\\kyc\\user-22\\43cef7d0250740c98a740635b308678b.jpg",
+      "PackagePath": "staticwebassets\\uploads\\kyc\\user-22\\43cef7d0250740c98a740635b308678b.jpg"
+    },
+    {
+      "Id": "C:\\cs66\\end\\BookMyServiceBE\\wwwroot\\uploads\\kyc\\user-22\\f6bd49ea5ea6431c9e3da1ef7b737f22.jpg",
+      "PackagePath": "staticwebassets\\uploads\\kyc\\user-22\\f6bd49ea5ea6431c9e3da1ef7b737f22.jpg"
+    },
+    {
+      "Id": "C:\\cs66\\end\\BookMyServiceBE\\wwwroot\\uploads\\kyc\\user-28\\98091f0cff914202ac91c7861268d9ee.jpg",
+      "PackagePath": "staticwebassets\\uploads\\kyc\\user-28\\98091f0cff914202ac91c7861268d9ee.jpg"
+    },
+    {
+      "Id": "C:\\cs66\\end\\BookMyServiceBE\\wwwroot\\uploads\\kyc\\user-28\\a7582e4afacc4c5487a55e38832c5925.jpg",
+      "PackagePath": "staticwebassets\\uploads\\kyc\\user-28\\a7582e4afacc4c5487a55e38832c5925.jpg"
+    },
+    {
+      "Id": "C:\\cs66\\end\\BookMyServiceBE\\wwwroot\\uploads\\kyc\\user-29\\436d1578ae7d4d9bbccdf986420355a5.jpg",
+      "PackagePath": "staticwebassets\\uploads\\kyc\\user-29\\436d1578ae7d4d9bbccdf986420355a5.jpg"
+    },
+    {
+      "Id": "C:\\cs66\\end\\BookMyServiceBE\\wwwroot\\uploads\\kyc\\user-29\\ec404e35b3264de095b66ccf4d35fc4f.jpg",
+      "PackagePath": "staticwebassets\\uploads\\kyc\\user-29\\ec404e35b3264de095b66ccf4d35fc4f.jpg"
+    },
+    {
+      "Id": "C:\\cs66\\end\\BookMyServiceBE\\wwwroot\\uploads\\services\\payment-17\\58f313c448b84978aa20cf3cd5c1d2d6.png",
+      "PackagePath": "staticwebassets\\uploads\\services\\payment-17\\58f313c448b84978aa20cf3cd5c1d2d6.png"
+    },
+    {
+      "Id": "C:\\cs66\\end\\BookMyServiceBE\\wwwroot\\uploads\\services\\payment-20\\9837b875f8134e6680c14f1ff5ea52d1.jpg",
+      "PackagePath": "staticwebassets\\uploads\\services\\payment-20\\9837b875f8134e6680c14f1ff5ea52d1.jpg"
+    },
+    {
+      "Id": "C:\\cs66\\end\\BookMyServiceBE\\wwwroot\\uploads\\services\\payment-29\\9b59b52f80fe478e9a558b9e41af9e90.jpg",
+      "PackagePath": "staticwebassets\\uploads\\services\\payment-29\\9b59b52f80fe478e9a558b9e41af9e90.jpg"
+    },
+    {
+      "Id": "C:\\cs66\\end\\BookMyServiceBE\\wwwroot\\uploads\\services\\service-13\\367020dc4622466eaf9d2f4eee529111.jpg",
+      "PackagePath": "staticwebassets\\uploads\\services\\service-13\\367020dc4622466eaf9d2f4eee529111.jpg"
+    },
+    {
+      "Id": "C:\\cs66\\end\\BookMyServiceBE\\wwwroot\\uploads\\services\\service-13\\e522d15e89ad42faa7fb6b95756cc689.jpg",
+      "PackagePath": "staticwebassets\\uploads\\services\\service-13\\e522d15e89ad42faa7fb6b95756cc689.jpg"
+    },
+    {
+      "Id": "C:\\cs66\\end\\BookMyServiceBE\\wwwroot\\uploads\\services\\service-13\\ebb706a78e0d47a5b616e000c78bd548.jpg",
+      "PackagePath": "staticwebassets\\uploads\\services\\service-13\\ebb706a78e0d47a5b616e000c78bd548.jpg"
+    },
+    {
+      "Id": "C:\\cs66\\end\\BookMyServiceBE\\wwwroot\\uploads\\services\\service-14\\2596205ae4724b09b4f2f2a875d1d658.jpg",
+      "PackagePath": "staticwebassets\\uploads\\services\\service-14\\2596205ae4724b09b4f2f2a875d1d658.jpg"
+    },
+    {
+      "Id": "C:\\cs66\\end\\BookMyServiceBE\\wwwroot\\uploads\\services\\service-14\\69c93de2446b4355a2c9804cff5f1d89.jpg",
+      "PackagePath": "staticwebassets\\uploads\\services\\service-14\\69c93de2446b4355a2c9804cff5f1d89.jpg"
+    },
+    {
+      "Id": "C:\\cs66\\end\\BookMyServiceBE\\wwwroot\\uploads\\services\\service-17\\0672df44c7d4426d90651a8669149866.jpg",
+      "PackagePath": "staticwebassets\\uploads\\services\\service-17\\0672df44c7d4426d90651a8669149866.jpg"
+    },
+    {
+      "Id": "C:\\cs66\\end\\BookMyServiceBE\\wwwroot\\uploads\\services\\service-17\\1d2e2dbfbcaa454b88f6b96cc7b4d2e9.jpg",
+      "PackagePath": "staticwebassets\\uploads\\services\\service-17\\1d2e2dbfbcaa454b88f6b96cc7b4d2e9.jpg"
+    },
+    {
+      "Id": "C:\\cs66\\end\\BookMyServiceBE\\wwwroot\\uploads\\services\\service-17\\97d085e1e70a4954bb43c3120323ec49.jpg",
+      "PackagePath": "staticwebassets\\uploads\\services\\service-17\\97d085e1e70a4954bb43c3120323ec49.jpg"
+    },
+    {
+      "Id": "C:\\cs66\\end\\BookMyServiceBE\\wwwroot\\uploads\\services\\service-18\\4b7e52a2f7fa40069be051fa5d8017cd.jpg",
+      "PackagePath": "staticwebassets\\uploads\\services\\service-18\\4b7e52a2f7fa40069be051fa5d8017cd.jpg"
+    },
+    {
+      "Id": "C:\\cs66\\end\\BookMyServiceBE\\wwwroot\\uploads\\services\\service-18\\5b61d6e6a585430b8a3a973c565f8552.jpg",
+      "PackagePath": "staticwebassets\\uploads\\services\\service-18\\5b61d6e6a585430b8a3a973c565f8552.jpg"
+    },
+    {
+      "Id": "C:\\cs66\\end\\BookMyServiceBE\\wwwroot\\uploads\\services\\service-18\\90cacc2bb14143c28fd490a0e1390415.jpeg",
+      "PackagePath": "staticwebassets\\uploads\\services\\service-18\\90cacc2bb14143c28fd490a0e1390415.jpeg"
+    },
+    {
+      "Id": "C:\\cs66\\end\\BookMyServiceBE\\wwwroot\\uploads\\services\\service-18\\c70af7ba88ca498596ccb0239764f7f1.jpg",
+      "PackagePath": "staticwebassets\\uploads\\services\\service-18\\c70af7ba88ca498596ccb0239764f7f1.jpg"
+    },
+    {
+      "Id": "C:\\cs66\\end\\BookMyServiceBE\\wwwroot\\uploads\\services\\service-19\\1686910de895450188b4e9a89aa419d0.jpg",
+      "PackagePath": "staticwebassets\\uploads\\services\\service-19\\1686910de895450188b4e9a89aa419d0.jpg"
+    },
+    {
+      "Id": "C:\\cs66\\end\\BookMyServiceBE\\wwwroot\\uploads\\services\\service-19\\1aac44d0d9194c69b29dd3e973627c3f.jpg",
+      "PackagePath": "staticwebassets\\uploads\\services\\service-19\\1aac44d0d9194c69b29dd3e973627c3f.jpg"
+    },
+    {
+      "Id": "C:\\cs66\\end\\BookMyServiceBE\\wwwroot\\uploads\\services\\service-19\\1f7b861cf11a4a45acdc84b039fc3a9a.jpg",
+      "PackagePath": "staticwebassets\\uploads\\services\\service-19\\1f7b861cf11a4a45acdc84b039fc3a9a.jpg"
+    },
+    {
+      "Id": "C:\\cs66\\end\\BookMyServiceBE\\wwwroot\\uploads\\services\\service-19\\aa8be7d6740d4cfda09b96fadd14c54d.jpg",
+      "PackagePath": "staticwebassets\\uploads\\services\\service-19\\aa8be7d6740d4cfda09b96fadd14c54d.jpg"
+    },
+    {
+      "Id": "C:\\cs66\\end\\BookMyServiceBE\\wwwroot\\uploads\\services\\service-19\\c11bb2493eb24f1d824aa45ca5f53922.jpg",
+      "PackagePath": "staticwebassets\\uploads\\services\\service-19\\c11bb2493eb24f1d824aa45ca5f53922.jpg"
+    },
+    {
+      "Id": "C:\\cs66\\end\\BookMyServiceBE\\wwwroot\\uploads\\services\\service-20\\311748fe644744a9ad4e31812b97a3a4.jpg",
+      "PackagePath": "staticwebassets\\uploads\\services\\service-20\\311748fe644744a9ad4e31812b97a3a4.jpg"
+    },
+    {
+      "Id": "C:\\cs66\\end\\BookMyServiceBE\\wwwroot\\uploads\\services\\service-20\\6d7022b9949f4eecb79ee47b056a53ee.jpg",
+      "PackagePath": "staticwebassets\\uploads\\services\\service-20\\6d7022b9949f4eecb79ee47b056a53ee.jpg"
+    },
+    {
+      "Id": "C:\\cs66\\end\\BookMyServiceBE\\wwwroot\\uploads\\services\\service-20\\8f42da148b5649b19c8611f12465e14b.jpg",
+      "PackagePath": "staticwebassets\\uploads\\services\\service-20\\8f42da148b5649b19c8611f12465e14b.jpg"
+    },
+    {
+      "Id": "C:\\cs66\\end\\BookMyServiceBE\\wwwroot\\uploads\\services\\service-21\\0618b7ef4ea9436c9abde9de83f6d88e.jpeg",
+      "PackagePath": "staticwebassets\\uploads\\services\\service-21\\0618b7ef4ea9436c9abde9de83f6d88e.jpeg"
+    },
+    {
+      "Id": "C:\\cs66\\end\\BookMyServiceBE\\wwwroot\\uploads\\services\\service-21\\0b31433f7fe5433ea60d372ccfa4f119.jpg",
+      "PackagePath": "staticwebassets\\uploads\\services\\service-21\\0b31433f7fe5433ea60d372ccfa4f119.jpg"
+    },
+    {
+      "Id": "C:\\cs66\\end\\BookMyServiceBE\\wwwroot\\uploads\\services\\service-21\\9198d103afad4fe2980a266500393429.jpg",
+      "PackagePath": "staticwebassets\\uploads\\services\\service-21\\9198d103afad4fe2980a266500393429.jpg"
+    },
+    {
+      "Id": "C:\\cs66\\end\\BookMyServiceBE\\wwwroot\\uploads\\services\\service-21\\b5567349914740168aaf2dd253865965.jpg",
+      "PackagePath": "staticwebassets\\uploads\\services\\service-21\\b5567349914740168aaf2dd253865965.jpg"
+    },
+    {
+      "Id": "C:\\cs66\\end\\BookMyServiceBE\\wwwroot\\uploads\\services\\service-22\\2b7c4123329848ae8f2ffe76abda3289.jpg",
+      "PackagePath": "staticwebassets\\uploads\\services\\service-22\\2b7c4123329848ae8f2ffe76abda3289.jpg"
+    },
+    {
+      "Id": "C:\\cs66\\end\\BookMyServiceBE\\wwwroot\\uploads\\services\\service-22\\2ec08880f4b34896b24d3637cc1f10f4.jpg",
+      "PackagePath": "staticwebassets\\uploads\\services\\service-22\\2ec08880f4b34896b24d3637cc1f10f4.jpg"
+    },
+    {
+      "Id": "C:\\cs66\\end\\BookMyServiceBE\\wwwroot\\uploads\\services\\service-22\\85338a9f8f6f4be2afadb6fea92ac66c.jpg",
+      "PackagePath": "staticwebassets\\uploads\\services\\service-22\\85338a9f8f6f4be2afadb6fea92ac66c.jpg"
+    },
+    {
+      "Id": "C:\\cs66\\end\\BookMyServiceBE\\wwwroot\\uploads\\services\\service-22\\9cef2f9b464f45819891077157e7f1b2.jpg",
+      "PackagePath": "staticwebassets\\uploads\\services\\service-22\\9cef2f9b464f45819891077157e7f1b2.jpg"
+    },
+    {
+      "Id": "C:\\cs66\\end\\BookMyServiceBE\\wwwroot\\vite.svg",
+      "PackagePath": "staticwebassets\\vite.svg"
+    },
+    {
+      "Id": "obj\\Release\\net9.0\\staticwebassets\\msbuild.BookMyServiceBE.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj\\Release\\net9.0\\staticwebassets\\msbuild.BookMyServiceBE.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Release\\net9.0\\staticwebassets\\msbuild.build.BookMyServiceBE.props",
+      "PackagePath": "build\\BookMyServiceBE.props"
+    },
+    {
+      "Id": "obj\\Release\\net9.0\\staticwebassets\\msbuild.buildMultiTargeting.BookMyServiceBE.props",
+      "PackagePath": "buildMultiTargeting\\BookMyServiceBE.props"
+    },
+    {
+      "Id": "obj\\Release\\net9.0\\staticwebassets\\msbuild.buildTransitive.BookMyServiceBE.props",
+      "PackagePath": "buildTransitive\\BookMyServiceBE.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
