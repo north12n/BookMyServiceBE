@@ -1,24 +1,5 @@
 [
   {
-    "ContainingType": "Program\u002B\u003C\u003Ec",
-    "Method": "\u003C\u003CMain\u003E$\u003Eb__0_6",
-    "RelativePath": "",
-    "HttpMethod": "GET",
-    "IsController": false,
-    "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": [
-      {
-        "Type": "System.String",
-        "MediaTypes": [
-          "text/plain"
-        ],
-        "StatusCode": 200
-      }
-    ],
-    "EndpointName": "Root"
-  },
-  {
     "ContainingType": "BookMyServiceBE.Controllers.AccountController",
     "Method": "UpgradeToProvider",
     "RelativePath": "api/account/upgrade/provider",
@@ -543,11 +524,6 @@
         "Name": "id",
         "Type": "System.Int32",
         "IsRequired": true
-      },
-      {
-        "Name": "feePercent",
-        "Type": "System.Nullable\u00601[[System.Decimal, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
-        "IsRequired": false
       }
     ],
     "ReturnTypes": []
@@ -564,11 +540,27 @@
         "Name": "id",
         "Type": "System.Int32",
         "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BookMyServiceBE.Controllers.BookingsController",
+    "Method": "ProviderReject",
+    "RelativePath": "api/bookings/{id}/provider-reject",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
       },
       {
-        "Name": "feePercent",
-        "Type": "System.Nullable\u00601[[System.Decimal, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
-        "IsRequired": false
+        "Name": "dto",
+        "Type": "BookMyServiceBE.Models.Dto.CancelBookingDto",
+        "IsRequired": true
       }
     ],
     "ReturnTypes": []
@@ -608,6 +600,16 @@
         "IsRequired": true
       }
     ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BookMyServiceBE.Controllers.BookingsController",
+    "Method": "GetAllPayouts",
+    "RelativePath": "api/bookings/payouts",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
     "ReturnTypes": []
   },
   {

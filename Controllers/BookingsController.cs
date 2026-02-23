@@ -354,7 +354,7 @@ namespace BookMyServiceBE.Controllers
 
         /// <summary>แอดมิน: โอนเงินให้ผู้ให้บริการ (mock)</summary>
         [HttpPost("{id:int}/payout/mock")]
-        public async Task<IActionResult> PayoutProviderMock([FromRoute] int id, [FromQuery] decimal? feePercent = 10m)
+        public async Task<IActionResult> PayoutProviderMock([FromRoute] int id)
         {
             var booking = await _db.Bookings
                 .Include(b => b.ProviderService).ThenInclude(s => s.Provider)
@@ -375,8 +375,19 @@ namespace BookMyServiceBE.Controllers
             var amount = booking.FinalPrice ?? booking.EstimatedPrice;
             if (amount <= 0) return BadRequest(new { message = "Invalid amount." });
 
+            // ✅ อ่าน PLATFORM_FEE_PERCENT จาก System Settings (default 10 ถ้าไม่มี)
+            var feePercentSetting = await _db.SystemSettings
+                .AsNoTracking()
+                .FirstOrDefaultAsync(s => s.Key == "PLATFORM_FEE_PERCENT");
+
+            var feePercent = 10m; // default 10%
+            if (feePercentSetting is not null && decimal.TryParse(feePercentSetting.Value, out var parsedFee))
+            {
+                feePercent = parsedFee;
+            }
+
             // คำนวณค่าธรรมเนียม/คอมมิชชั่น
-            var feeRate = (feePercent ?? 10m) / 100m;
+            var feeRate = feePercent / 100m;
             var fee = Math.Round(amount * feeRate, 2, MidpointRounding.AwayFromZero);
             var net = amount - fee;
 
@@ -393,7 +404,6 @@ namespace BookMyServiceBE.Controllers
                 NetAmount = net,
                 Status = 2,                 // 2 = Paid (จ่ายแล้ว)
                 SettledAt = DateTime.UtcNow // เวลาที่โอน
-                                            // CreatedAt = default = UtcNow (จาก model)
             };
 
             _db.Payouts.Add(payout);
@@ -408,7 +418,8 @@ namespace BookMyServiceBE.Controllers
                 payout.FeeAmount,
                 payout.NetAmount,
                 payout.Status,
-                payout.SettledAt
+                payout.SettledAt,
+                feePercentApplied = feePercent
             });
         }
 
@@ -431,7 +442,8 @@ namespace BookMyServiceBE.Controllers
                                      ProviderName = b.ProviderService.Provider.FullName,
                                      ProviderPromptPayId = b.ProviderService.Provider.PromptPayId,
                                      Amount = (b.FinalPrice ?? b.EstimatedPrice),
-                                     PayoutId = p != null ? p.PayoutId : (int?)null
+                                     PayoutId = p != null ? p.PayoutId : (int?)null,
+                                     CreatedAt = (b.UpdatedAt ?? b.CreatedAt)
                                  })
                 .ToListAsync();
 
@@ -441,7 +453,7 @@ namespace BookMyServiceBE.Controllers
         /// <summary>สร้างรายการโอน (Pending) จาก Booking ที่เสร็จงานแล้ว</summary>
         [Authorize(Roles = "Admin")]
         [HttpPost("{id:int}/payout/init")]
-        public async Task<IActionResult> InitPayout([FromRoute] int id, [FromQuery] decimal? feePercent = 10m)
+        public async Task<IActionResult> InitPayout([FromRoute] int id)
         {
             var booking = await _db.Bookings
                 .Include(b => b.ProviderService).ThenInclude(s => s.Provider)
@@ -458,7 +470,18 @@ namespace BookMyServiceBE.Controllers
             var amount = booking.FinalPrice ?? booking.EstimatedPrice;
             if (amount <= 0) return BadRequest(new { message = "Invalid amount." });
 
-            var feeRate = (feePercent ?? 10m) / 100m;
+            // ✅ อ่าน PLATFORM_FEE_PERCENT จาก System Settings (default 10 ถ้าไม่มี)
+            var feePercentSetting = await _db.SystemSettings
+                .AsNoTracking()
+                .FirstOrDefaultAsync(s => s.Key == "PLATFORM_FEE_PERCENT");
+
+            var feePercent = 10m; // default 10%
+            if (feePercentSetting is not null && decimal.TryParse(feePercentSetting.Value, out var parsedFee))
+            {
+                feePercent = parsedFee;
+            }
+
+            var feeRate = feePercent / 100m;
             var fee = Math.Round(amount * feeRate, 2, MidpointRounding.AwayFromZero);
             var net = amount - fee;
 
@@ -488,7 +511,8 @@ namespace BookMyServiceBE.Controllers
                 payout.FeeAmount,
                 payout.NetAmount,
                 payout.Status,
-                payout.SettledAt
+                payout.SettledAt,
+                feePercentApplied = feePercent
             });
         }
 
@@ -511,7 +535,37 @@ namespace BookMyServiceBE.Controllers
                     p.CreatedAt,
                     p.TransferSlipPath,
                     p.TransactionRef
-                })  
+                })
+                .ToListAsync();
+
+            return Ok(list);
+        }
+
+        /// <summary>แอดมิน: ดูรายการโอนทั้งหมดในระบบ</summary>
+        [Authorize(Roles = "Admin")]
+        [HttpGet("payouts")]
+        public async Task<IActionResult> GetAllPayouts()
+        {
+            var list = await _db.Payouts.AsNoTracking()
+                .Include(p => p.Provider)
+                .Include(p => p.Booking)
+                .OrderByDescending(p => p.SettledAt ?? p.CreatedAt)
+                .Select(p => new
+                {
+                    p.PayoutId,
+                    p.BookingId,
+                    BookingCode = p.Booking.BookingCode,
+                    p.UserId,
+                    ProviderName = p.Provider.FullName,
+                    p.GrossAmount,
+                    p.FeeAmount,
+                    p.NetAmount,
+                    p.Status,
+                    p.SettledAt,
+                    p.CreatedAt,
+                    p.TransferSlipPath,
+                    p.TransactionRef
+                })
                 .ToListAsync();
 
             return Ok(list);
@@ -555,12 +609,32 @@ namespace BookMyServiceBE.Controllers
                 return BadRequest(new { message = $"Invalid transition: {booking.Status} -> {BookingStatus.CancelledByCustomer}" });
             }
 
+            // ✅ คำนวณ refund ตาม status ปัจจุบัน
+            var amount = booking.FinalPrice ?? booking.EstimatedPrice;
+            int refundPercent = 0;
+            decimal refundAmount = 0;
+
+            // นโยบายคืนเงิน:
+            // - PendingPayment / Paid (ก่อน Provider รับงาน) = 100%
+            // - Assigned (Provider รับแล้ว แต่ยังไม่เริ่ม) = 50%
+            // - InProgress = 0% (แต่โค้ดด้านบนบล็อคไว้แล้ว)
+            if (booking.Status == BookingStatus.PendingPayment || booking.Status == BookingStatus.Paid)
+            {
+                refundPercent = 100;
+                refundAmount = amount;
+            }
+            else if (booking.Status == BookingStatus.Assigned)
+            {
+                refundPercent = 50;
+                refundAmount = Math.Round(amount * 0.5m, 2, MidpointRounding.AwayFromZero);
+            }
+
             booking.Status = BookingStatus.CancelledByCustomer;
             booking.UpdatedAt = DateTime.UtcNow;
-
-            // เก็บเหตุผล (ถ้าใน Booking ไม่มีช่อง reason ก็ข้าม)
-            // ถ้าคุณอยากเก็บ reason จริง แนะนำเพิ่มคอลัมน์ CancelReason ใน Booking
-            var reason = string.IsNullOrWhiteSpace(dto?.Reason) ? null : dto.Reason.Trim();
+            booking.CancelledAt = DateTime.UtcNow;
+            booking.CancelReason = string.IsNullOrWhiteSpace(dto?.Reason) ? null : dto.Reason.Trim();
+            booking.RefundPercentage = refundPercent;
+            booking.RefundAmount = refundAmount;
 
             await _db.SaveChangesAsync();
 
@@ -568,9 +642,64 @@ namespace BookMyServiceBE.Controllers
                 booking.BookingId,
                 booking.BookingCode,
                 booking.Status.ToString(),
-                reason,
-                booking.UpdatedAt.Value
+                booking.CancelReason,
+                booking.CancelledAt.Value
             ));
+        }
+
+        /// <summary>Provider ปฏิเสธงาน (ไม่รับงาน) - คืนเงินลูกค้าเต็มจำนวน</summary>
+        [Authorize(Roles = "Provider")]
+        [HttpPost("{id:int}/provider-reject")]
+        public async Task<IActionResult> ProviderReject([FromRoute] int id, [FromBody] BookMyServiceBE.Models.Dto.CancelBookingDto dto)
+        {
+            var userId = User.GetUserId();
+            if (userId <= 0) return Unauthorized();
+
+            var booking = await _db.Bookings
+                .Include(b => b.ProviderService)
+                .FirstOrDefaultAsync(b => b.BookingId == id);
+
+            if (booking is null)
+                return NotFound(new { message = "Booking not found." });
+
+            // ต้องเป็น provider ของงานนั้น
+            if (booking.ProviderService.ProviderId != userId)
+                return Forbid();
+
+            // ต้องเป็นสถานะที่ยังไม่เริ่มงาน
+            if (booking.Status != BookingStatus.Paid && booking.Status != BookingStatus.Assigned)
+                return BadRequest(new { message = $"Cannot reject when booking is {booking.Status}." });
+
+            // ยกเลิกซ้ำไม่ได้
+            if (booking.Status == BookingStatus.CancelledByCustomer ||
+                booking.Status == BookingStatus.CancelledByProvider ||
+                booking.Status == BookingStatus.Cancelled)
+            {
+                return Conflict(new { message = "Booking already cancelled." });
+            }
+
+            // Provider reject = คืนเงินเต็ม 100%
+            var amount = booking.FinalPrice ?? booking.EstimatedPrice;
+
+            booking.Status = BookingStatus.CancelledByProvider;
+            booking.UpdatedAt = DateTime.UtcNow;
+            booking.CancelledAt = DateTime.UtcNow;
+            booking.CancelReason = string.IsNullOrWhiteSpace(dto?.Reason) ? "Provider rejected the job" : dto.Reason.Trim();
+            booking.RefundPercentage = 100;
+            booking.RefundAmount = amount;
+
+            await _db.SaveChangesAsync();
+
+            return Ok(new
+            {
+                booking.BookingId,
+                booking.BookingCode,
+                Status = booking.Status.ToString(),
+                booking.CancelReason,
+                booking.CancelledAt,
+                booking.RefundPercentage,
+                booking.RefundAmount
+            });
         }
 
     }

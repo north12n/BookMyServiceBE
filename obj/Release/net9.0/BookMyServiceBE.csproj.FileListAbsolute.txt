@@ -214,6 +214,7 @@ C:\cs66\end\BookMyServiceBE\obj\Release\net9.0\ref\BookMyServiceBE.dll
 C:\cs66\end\BookMyServiceBE\obj\Release\net9.0\compressed\32vb5pzn07-elkt2ggitk.gz
 C:\cs66\end\BookMyServiceBE\obj\Release\net9.0\compressed\24mm9xucci-shrvs59vmg.gz
 C:\cs66\end\BookMyServiceBE\obj\Release\net9.0\compressed\1ua4wmyyyw-69kjnsiwqx.gz
-C:\cs66\end\BookMyServiceBE\obj\Release\net9.0\compressed\2d1yv90nck-3ejx7tv4db.gz
-C:\cs66\end\BookMyServiceBE\obj\Release\net9.0\compressed\pl4ibwbkio-f8c4jmup8w.gz
-C:\cs66\end\BookMyServiceBE\obj\Release\net9.0\compressed\1llx7h2rbq-14d8w1hju9.gz
+C:\cs66\end\BookMyServiceBE\obj\Release\net9.0\BookMyServiceBE.sourcelink.json
+C:\cs66\end\BookMyServiceBE\obj\Release\net9.0\compressed\kpfw3ixnyh-ejcmzrm6yv.gz
+C:\cs66\end\BookMyServiceBE\obj\Release\net9.0\compressed\z9h9fo5dij-l5oyhstgfk.gz
+C:\cs66\end\BookMyServiceBE\obj\Release\net9.0\compressed\1llx7h2rbq-upwnycjf00.gz

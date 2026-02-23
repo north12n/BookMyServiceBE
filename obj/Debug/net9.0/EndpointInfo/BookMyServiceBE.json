@@ -574,15 +574,6 @@
               "type": "integer",
               "format": "int32"
             }
-          },
-          {
-            "name": "feePercent",
-            "in": "query",
-            "schema": {
-              "type": "number",
-              "format": "double",
-              "default": 10
-            }
           }
         ],
         "responses": {
@@ -618,15 +609,6 @@
               "type": "integer",
               "format": "int32"
             }
-          },
-          {
-            "name": "feePercent",
-            "in": "query",
-            "schema": {
-              "type": "number",
-              "format": "double",
-              "default": 10
-            }
           }
         ],
         "responses": {
@@ -651,6 +633,18 @@
               "format": "int32"
             }
           }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/bookings/payouts": {
+      "get": {
+        "tags": [
+          "Bookings"
         ],
         "responses": {
           "200": {
@@ -714,6 +708,48 @@
                 }
               }
             }
+          }
+        }
+      }
+    },
+    "/api/bookings/{id}/provider-reject": {
+      "post": {
+        "tags": [
+          "Bookings"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/BookMyServiceBE.Models.Dto.CancelBookingDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/BookMyServiceBE.Models.Dto.CancelBookingDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/BookMyServiceBE.Models.Dto.CancelBookingDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
           }
         }
       }

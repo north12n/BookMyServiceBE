@@ -25,10 +25,12 @@ namespace BookMyService.Models
             {
                 // เปลี่ยน connection string ให้ตรงกับเครื่อง/เซิร์ฟเวอร์ของคุณ
                 optionsBuilder.UseSqlServer(
-                   "Server=10.103.0.16,1433; Database=DB_BookMyService; Trusted_Connection=false; MultipleActiveResultSets=true; TrustServerCertificate=True; User Id=student; Password=Cs@2700; Encrypt=false;");
+
+                   "Server=10.103.0.16,1433; Database=DB_BookMyService; Trusted_Connection=false; MultipleActiveResultSets=true; TrustServerCertificate=True; User Id=student; Password=Cs@2700; Encrypt=false;"
+                   
+                   );
             }
         }
-        //"Server=.\\SQLEXPRESS; Database=DB_BookMyService; Trusted_Connection=True; MultipleActiveResultSets=true; TrustServerCertificate=True;"
         //"Server=LAPTOP-EGR1BSET\\SQLEXPRESS;Database=BookMyServiceDb1;Trusted_Connection=True;MultipleActiveResultSets=true;TrustServerCertificate=True"
 
         // server|    "Server=10.103.0.16,1433; Database=DB_BookMyService; Trusted_Connection=false; MultipleActiveResultSets=true; TrustServerCertificate=True; User Id=student; Password=Cs@2700; Encrypt=false;"

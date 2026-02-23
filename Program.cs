@@ -189,20 +189,25 @@ app.UseSwaggerUI(c =>
     c.DocumentTitle = "BookMyServiceBE API";
 });
 
-app.UseHttpsRedirection();
+
 
 app.UseDefaultFiles();
 app.UseStaticFiles();
 
 app.UseCors("fe");
-app.UseResponseCaching();
+
+app.UseHttpsRedirection();
 
 // IMPORTANT: auth order
 app.UseAuthentication();
 app.UseAuthorization();
 
+app.UseResponseCaching();
+
 app.MapControllers();
-app.MapGet("/", () => "API is running").WithName("Root").WithOpenApi();
+
+//app.MapGet("/health", () => "API is running").WithName("Root").WithOpenApi();
+
 app.MapFallbackToFile("index.html");
 
 app.Run();
