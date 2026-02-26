@@ -276,9 +276,21 @@ namespace BookMyService.Models
             // ChatMessage
             b.Entity<ChatMessage>(e =>
             {
+                e.Property(x => x.MessageText).HasMaxLength(4000).IsRequired();
+                e.Property(x => x.AttachmentPath).HasMaxLength(500);
+                e.Property(x => x.AttachmentName).HasMaxLength(260);
+                e.Property(x => x.AttachmentMimeType).HasMaxLength(100);
+                e.HasIndex(x => new { x.RelatedBookingId, x.CreatedAt });
+                e.HasIndex(x => new { x.UserId, x.RecipientUserId, x.CreatedAt });
+
                 e.HasOne(x => x.Sender)
                     .WithMany()
                     .HasForeignKey(x => x.UserId)
+                    .OnDelete(DeleteBehavior.Restrict);
+
+                e.HasOne(x => x.Recipient)
+                    .WithMany()
+                    .HasForeignKey(x => x.RecipientUserId)
                     .OnDelete(DeleteBehavior.Restrict);
 
                 e.HasOne(x => x.Booking)

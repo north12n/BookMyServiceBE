@@ -221,7 +221,6 @@ C:\cs66\end\BookMyServiceBE\bin\Debug\net9.0\BookMyService\BookMyServiceBE.deps.
 C:\cs66\end\BookMyServiceBE\bin\Debug\net9.0\BookMyService\BookMyServiceBE.runtimeconfig.json
 C:\cs66\end\BookMyServiceBE\bin\Debug\net9.0\BookMyService\BookMyServiceBE.staticwebassets.endpoints.json
 C:\cs66\end\BookMyServiceBE\obj\Debug\net9.0\BookMyServiceBE.sourcelink.json
-C:\cs66\end\BookMyServiceBE\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt
-C:\cs66\end\BookMyServiceBE\obj\Debug\net9.0\compressed\kpfw3ixnyh-ejcmzrm6yv.gz
-C:\cs66\end\BookMyServiceBE\obj\Debug\net9.0\compressed\z9h9fo5dij-l5oyhstgfk.gz
-C:\cs66\end\BookMyServiceBE\obj\Debug\net9.0\compressed\1llx7h2rbq-upwnycjf00.gz
+C:\cs66\end\BookMyServiceBE\obj\Debug\net9.0\compressed\8z5614aeoo-q80pah7grl.gz
+C:\cs66\end\BookMyServiceBE\obj\Debug\net9.0\compressed\1llx7h2rbq-3c8nzxak72.gz
+C:\cs66\end\BookMyServiceBE\obj\Debug\net9.0\compressed\2qbhwphkpi-9ff3ylf473.gz

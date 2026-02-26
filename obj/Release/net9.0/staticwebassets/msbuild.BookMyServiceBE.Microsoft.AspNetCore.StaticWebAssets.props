@@ -1,40 +1,40 @@
 ﻿<Project>
   <ItemGroup>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\assets\index-5LKf1KvQ.js'))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\assets\index-HmKQ7OEM.css'))">
       <SourceType>Package</SourceType>
       <SourceId>BookMyServiceBE</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/BookMyServiceBE</BasePath>
-      <RelativePath>assets/index-5LKf1KvQ.js</RelativePath>
+      <RelativePath>assets/index-HmKQ7OEM.css</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
       <AssetRole>Primary</AssetRole>
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>ejcmzrm6yv</Fingerprint>
-      <Integrity>BujwuMYsNTP4jxlnt/kMwaGY9d4mGEdFWPba9Q9cg0g=</Integrity>
+      <Fingerprint>q80pah7grl</Fingerprint>
+      <Integrity>hpQcubhB/mSPA9oUF5E114szGA7PKQ1A0PeHfByw/XM=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\assets\index-5LKf1KvQ.js'))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\assets\index-HmKQ7OEM.css'))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\assets\index-D0lrxyxt.css'))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\assets\index-jB23OhqN.js'))">
       <SourceType>Package</SourceType>
       <SourceId>BookMyServiceBE</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/BookMyServiceBE</BasePath>
-      <RelativePath>assets/index-D0lrxyxt.css</RelativePath>
+      <RelativePath>assets/index-jB23OhqN.js</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
       <AssetRole>Primary</AssetRole>
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>l5oyhstgfk</Fingerprint>
-      <Integrity>yR9e9oQ2esZuWwhUWCYdLKt13YCYlcrNbUFV5I3MAk0=</Integrity>
+      <Fingerprint>i02o9zhvoy</Fingerprint>
+      <Integrity>MgVG5DQlHgV+tgOkgYzpCTVV6unTzyAN9Yc7MJItsc8=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\assets\index-D0lrxyxt.css'))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\assets\index-jB23OhqN.js'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\assets\inter-cyrillic-400-normal-HOLc17fK.woff'))">
       <SourceType>Package</SourceType>
@@ -1884,11 +1884,83 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>upwnycjf00</Fingerprint>
-      <Integrity>nvhjPEk0wmL/QbJhOXocK74u2G+f7QystkWK23m47IU=</Integrity>
+      <Fingerprint>3c8nzxak72</Fingerprint>
+      <Integrity>81BzG109mLo/YWY+2DQrD7aYCg0+ZdbH2d2fpILIobQ=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\index.html'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\kyc\user-112\42f3101f457d49f095b10638ecd25b9a.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>BookMyServiceBE</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/BookMyServiceBE</BasePath>
+      <RelativePath>uploads/kyc/user-112/42f3101f457d49f095b10638ecd25b9a.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>k35ielhyoe</Fingerprint>
+      <Integrity>sENoBVH0stCvcKxkmPcHFtRK47qMl6qcbqBhYJdig/Q=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\kyc\user-112\42f3101f457d49f095b10638ecd25b9a.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\kyc\user-112\c0fd0931d10f4ed19dfd9a8e1f0eaab5.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>BookMyServiceBE</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/BookMyServiceBE</BasePath>
+      <RelativePath>uploads/kyc/user-112/c0fd0931d10f4ed19dfd9a8e1f0eaab5.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>hed5s07vj9</Fingerprint>
+      <Integrity>52CkNBce5E7PgU7hGWjWGb85upgcd+Q3jvdw20UAoaE=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\kyc\user-112\c0fd0931d10f4ed19dfd9a8e1f0eaab5.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\kyc\user-113\02a9a7a6641246f2b92cdd38b672c41c.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>BookMyServiceBE</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/BookMyServiceBE</BasePath>
+      <RelativePath>uploads/kyc/user-113/02a9a7a6641246f2b92cdd38b672c41c.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>sdo0uk6izg</Fingerprint>
+      <Integrity>cAk0iujrbyUjCioz3QLD7XmWxkQWzJf1mBrhZa7adM0=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\kyc\user-113\02a9a7a6641246f2b92cdd38b672c41c.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\kyc\user-113\07b3324684344fd482363618967e913a.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>BookMyServiceBE</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/BookMyServiceBE</BasePath>
+      <RelativePath>uploads/kyc/user-113/07b3324684344fd482363618967e913a.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>hed5s07vj9</Fingerprint>
+      <Integrity>52CkNBce5E7PgU7hGWjWGb85upgcd+Q3jvdw20UAoaE=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\kyc\user-113\07b3324684344fd482363618967e913a.jpg'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\kyc\user-21\43f1233c200b41c5b21f053a52be8956.jpg'))">
       <SourceType>Package</SourceType>

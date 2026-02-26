@@ -60,7 +60,11 @@ namespace BookMyServiceBE.Models.Dto
         decimal EstimatedPrice,
         decimal? FinalPrice,
         BookingStatus Status,
-        DateTime CreatedAt)
+        DateTime CreatedAt,
+        string? CancelReason,
+        DateTime? CancelledAt,
+        decimal? RefundAmount,
+        int? RefundPercentage)
     {
         public static Expression<Func<Booking, BookingListItemDto>> Projection =>
             b => new BookingListItemDto(
@@ -83,7 +87,11 @@ namespace BookMyServiceBE.Models.Dto
                 b.EstimatedPrice,
                 b.FinalPrice,
                 b.Status,
-                b.CreatedAt
+                b.CreatedAt,
+                b.CancelReason,
+                b.CancelledAt,
+                b.RefundAmount,
+                b.RefundPercentage
             );
     }
 

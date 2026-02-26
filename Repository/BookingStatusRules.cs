@@ -17,7 +17,9 @@
                 // Cancel cases
                 (BookingStatus.Paid, BookingStatus.CancelledByProvider) => true,
                 (BookingStatus.Assigned, BookingStatus.CancelledByProvider) => true,
+                (BookingStatus.PendingPayment, BookingStatus.CancelledByCustomer) => true,
                 (BookingStatus.Paid, BookingStatus.CancelledByCustomer) => true,
+                (BookingStatus.Assigned, BookingStatus.CancelledByCustomer) => true,
 
                 _ => false
             };

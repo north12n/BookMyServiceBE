@@ -1,12 +1,12 @@
 {
   "Files": [
     {
-      "Id": "C:\\cs66\\end\\BookMyServiceBE\\wwwroot\\assets\\index-5LKf1KvQ.js",
-      "PackagePath": "staticwebassets\\assets\\index-5LKf1KvQ.js"
+      "Id": "C:\\cs66\\end\\BookMyServiceBE\\wwwroot\\assets\\index-HmKQ7OEM.css",
+      "PackagePath": "staticwebassets\\assets\\index-HmKQ7OEM.css"
     },
     {
-      "Id": "C:\\cs66\\end\\BookMyServiceBE\\wwwroot\\assets\\index-D0lrxyxt.css",
-      "PackagePath": "staticwebassets\\assets\\index-D0lrxyxt.css"
+      "Id": "C:\\cs66\\end\\BookMyServiceBE\\wwwroot\\assets\\index-jB23OhqN.js",
+      "PackagePath": "staticwebassets\\assets\\index-jB23OhqN.js"
     },
     {
       "Id": "C:\\cs66\\end\\BookMyServiceBE\\wwwroot\\assets\\inter-cyrillic-400-normal-HOLc17fK.woff",
@@ -419,6 +419,22 @@
     {
       "Id": "C:\\cs66\\end\\BookMyServiceBE\\wwwroot\\index.html",
       "PackagePath": "staticwebassets\\index.html"
+    },
+    {
+      "Id": "C:\\cs66\\end\\BookMyServiceBE\\wwwroot\\uploads\\kyc\\user-112\\42f3101f457d49f095b10638ecd25b9a.jpg",
+      "PackagePath": "staticwebassets\\uploads\\kyc\\user-112\\42f3101f457d49f095b10638ecd25b9a.jpg"
+    },
+    {
+      "Id": "C:\\cs66\\end\\BookMyServiceBE\\wwwroot\\uploads\\kyc\\user-112\\c0fd0931d10f4ed19dfd9a8e1f0eaab5.jpg",
+      "PackagePath": "staticwebassets\\uploads\\kyc\\user-112\\c0fd0931d10f4ed19dfd9a8e1f0eaab5.jpg"
+    },
+    {
+      "Id": "C:\\cs66\\end\\BookMyServiceBE\\wwwroot\\uploads\\kyc\\user-113\\02a9a7a6641246f2b92cdd38b672c41c.jpg",
+      "PackagePath": "staticwebassets\\uploads\\kyc\\user-113\\02a9a7a6641246f2b92cdd38b672c41c.jpg"
+    },
+    {
+      "Id": "C:\\cs66\\end\\BookMyServiceBE\\wwwroot\\uploads\\kyc\\user-113\\07b3324684344fd482363618967e913a.jpg",
+      "PackagePath": "staticwebassets\\uploads\\kyc\\user-113\\07b3324684344fd482363618967e913a.jpg"
     },
     {
       "Id": "C:\\cs66\\end\\BookMyServiceBE\\wwwroot\\uploads\\kyc\\user-21\\43f1233c200b41c5b21f053a52be8956.jpg",

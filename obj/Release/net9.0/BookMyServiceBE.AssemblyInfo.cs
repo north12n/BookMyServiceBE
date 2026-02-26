@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BookMyServiceBE")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e6b218d1583cfbfa5bc7bfa04626275a7dc2cf3f")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+559bb4d617ba71904412deee3a075e83a8930a7f")]
 [assembly: System.Reflection.AssemblyProductAttribute("BookMyServiceBE")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BookMyServiceBE")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

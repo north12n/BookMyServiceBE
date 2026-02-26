@@ -1,4 +1,4 @@
-﻿// Program.cs
+﻿﻿// Program.cs
 using System.Text;
 using System.Text.Json.Serialization;
 using System.IdentityModel.Tokens.Jwt;
@@ -121,13 +121,14 @@ if (!string.IsNullOrWhiteSpace(pathBase))
     app.UsePathBase(pathBase);
 }
 
-// Ensure database is migrated and seed initial data if needed
-using (var scope = app.Services.CreateScope())
+// Ensure database is migrated on startup if enabled
+var shouldMigrate = builder.Configuration.GetValue<bool>("Database:ApplyMigrationsOnStartup");
+
+if (shouldMigrate)
 {
+    using var scope = app.Services.CreateScope();
     var db = scope.ServiceProvider.GetRequiredService<ApplicationDbContext>();
     db.Database.Migrate();
-    var seeder = new DataSeeder(db);
-    await seeder.SeedInitialData();
 }
 
 app.UseExceptionHandler(appError =>

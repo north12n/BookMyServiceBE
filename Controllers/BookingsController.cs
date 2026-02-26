@@ -254,6 +254,36 @@ namespace BookMyServiceBE.Controllers
                 entity.FinalPrice = dto.FinalPrice;
             }
 
+            if (dto.NewStatus == BookingStatus.CancelledByProvider)
+            {
+                var amount = entity.FinalPrice ?? entity.EstimatedPrice;
+                entity.CancelledAt = DateTime.UtcNow;
+                entity.CancelReason ??= "Provider cancelled the booking";
+                entity.RefundPercentage = 100;
+                entity.RefundAmount = Math.Round(amount, 2, MidpointRounding.AwayFromZero);
+            }
+
+            if (dto.NewStatus == BookingStatus.CancelledByCustomer)
+            {
+                var amount = entity.FinalPrice ?? entity.EstimatedPrice;
+                var hoursUntilStart = (entity.RequestedStartAt - DateTime.UtcNow).TotalHours;
+
+                var refundPercentage = 0;
+                if (hoursUntilStart >= 24)
+                {
+                    refundPercentage = 100;
+                }
+                else if (hoursUntilStart >= 3)
+                {
+                    refundPercentage = 50;
+                }
+
+                entity.CancelledAt = DateTime.UtcNow;
+                entity.CancelReason ??= "Customer cancelled the booking";
+                entity.RefundPercentage = refundPercentage;
+                entity.RefundAmount = Math.Round(amount * refundPercentage / 100m, 2, MidpointRounding.AwayFromZero);
+            }
+
             entity.Status = dto.NewStatus;
             entity.UpdatedAt = DateTime.UtcNow;
 
@@ -609,25 +639,26 @@ namespace BookMyServiceBE.Controllers
                 return BadRequest(new { message = $"Invalid transition: {booking.Status} -> {BookingStatus.CancelledByCustomer}" });
             }
 
-            // ✅ คำนวณ refund ตาม status ปัจจุบัน
+            // ✅ คำนวณ refund ตามเวลาคงเหลือก่อนเริ่มงาน
             var amount = booking.FinalPrice ?? booking.EstimatedPrice;
             int refundPercent = 0;
             decimal refundAmount = 0;
 
             // นโยบายคืนเงิน:
-            // - PendingPayment / Paid (ก่อน Provider รับงาน) = 100%
-            // - Assigned (Provider รับแล้ว แต่ยังไม่เริ่ม) = 50%
-            // - InProgress = 0% (แต่โค้ดด้านบนบล็อคไว้แล้ว)
-            if (booking.Status == BookingStatus.PendingPayment || booking.Status == BookingStatus.Paid)
+            // - ยกเลิกก่อน >= 24 ชม. = 100%
+            // - ยกเลิกก่อน 3-24 ชม. = 50%
+            // - ยกเลิกก่อน < 3 ชม. = 0%
+            var hoursUntilStart = (booking.RequestedStartAt - DateTime.UtcNow).TotalHours;
+            if (hoursUntilStart >= 24)
             {
                 refundPercent = 100;
-                refundAmount = amount;
             }
-            else if (booking.Status == BookingStatus.Assigned)
+            else if (hoursUntilStart >= 3)
             {
                 refundPercent = 50;
-                refundAmount = Math.Round(amount * 0.5m, 2, MidpointRounding.AwayFromZero);
             }
+
+            refundAmount = Math.Round(amount * refundPercent / 100m, 2, MidpointRounding.AwayFromZero);
 
             booking.Status = BookingStatus.CancelledByCustomer;
             booking.UpdatedAt = DateTime.UtcNow;

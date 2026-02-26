@@ -754,6 +754,245 @@
         }
       }
     },
+    "/api/chat/contacts": {
+      "get": {
+        "tags": [
+          "Chat"
+        ],
+        "parameters": [
+          {
+            "name": "keyword",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/BookMyServiceBE.Controllers.ChatController.ContactSearchItemDto"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/chat/conversations": {
+      "get": {
+        "tags": [
+          "Chat"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/BookMyServiceBE.Controllers.ChatController.ConversationItemDto"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/chat/messages/{counterpartUserId}": {
+      "get": {
+        "tags": [
+          "Chat"
+        ],
+        "parameters": [
+          {
+            "name": "counterpartUserId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/BookMyServiceBE.Controllers.ChatController.ChatMessageDto"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/chat/messages": {
+      "post": {
+        "tags": [
+          "Chat"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/BookMyServiceBE.Controllers.ChatController.SendMessageRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/BookMyServiceBE.Controllers.ChatController.SendMessageRequest"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/BookMyServiceBE.Controllers.ChatController.SendMessageRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/BookMyServiceBE.Controllers.ChatController.ChatMessageDto"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/chat/messages/upload": {
+      "post": {
+        "tags": [
+          "Chat"
+        ],
+        "requestBody": {
+          "content": {
+            "multipart/form-data": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "CounterpartUserId": {
+                    "type": "integer",
+                    "format": "int32"
+                  },
+                  "MessageText": {
+                    "type": "string"
+                  },
+                  "File": {
+                    "type": "string",
+                    "format": "binary"
+                  }
+                }
+              },
+              "encoding": {
+                "CounterpartUserId": {
+                  "style": "form"
+                },
+                "MessageText": {
+                  "style": "form"
+                },
+                "File": {
+                  "style": "form"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/BookMyServiceBE.Controllers.ChatController.ChatMessageDto"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/chat/messages/{chatMessageId}": {
+      "put": {
+        "tags": [
+          "Chat"
+        ],
+        "parameters": [
+          {
+            "name": "chatMessageId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/BookMyServiceBE.Controllers.ChatController.EditMessageRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/BookMyServiceBE.Controllers.ChatController.EditMessageRequest"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/BookMyServiceBE.Controllers.ChatController.EditMessageRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Chat"
+        ],
+        "parameters": [
+          {
+            "name": "chatMessageId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/complaints": {
       "get": {
         "tags": [
@@ -2540,6 +2779,136 @@
         },
         "additionalProperties": false
       },
+      "BookMyServiceBE.Controllers.ChatController.ChatMessageDto": {
+        "type": "object",
+        "properties": {
+          "chatMessageId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "counterpartUserId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "senderUserId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "senderName": {
+            "type": "string",
+            "nullable": true
+          },
+          "messageText": {
+            "type": "string",
+            "nullable": true
+          },
+          "createdAt": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "isMine": {
+            "type": "boolean"
+          },
+          "isDeleted": {
+            "type": "boolean"
+          },
+          "attachmentPath": {
+            "type": "string",
+            "nullable": true
+          },
+          "attachmentName": {
+            "type": "string",
+            "nullable": true
+          },
+          "attachmentMimeType": {
+            "type": "string",
+            "nullable": true
+          },
+          "attachmentSize": {
+            "type": "integer",
+            "format": "int64",
+            "nullable": true
+          },
+          "attachmentKind": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "BookMyServiceBE.Controllers.ChatController.ContactSearchItemDto": {
+        "type": "object",
+        "properties": {
+          "userId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "fullName": {
+            "type": "string",
+            "nullable": true
+          },
+          "userRole": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "BookMyServiceBE.Controllers.ChatController.ConversationItemDto": {
+        "type": "object",
+        "properties": {
+          "counterpartUserId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "counterpartName": {
+            "type": "string",
+            "nullable": true
+          },
+          "counterpartRole": {
+            "type": "string",
+            "nullable": true
+          },
+          "lastMessage": {
+            "type": "string",
+            "nullable": true
+          },
+          "lastMessageAt": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "unreadCount": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
+      "BookMyServiceBE.Controllers.ChatController.EditMessageRequest": {
+        "type": "object",
+        "properties": {
+          "messageText": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "BookMyServiceBE.Controllers.ChatController.SendMessageRequest": {
+        "type": "object",
+        "properties": {
+          "counterpartUserId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "messageText": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
       "BookMyServiceBE.Controllers.ComplaintsController.CloseComplaintDto": {
         "type": "object",
         "properties": {
@@ -2946,6 +3315,25 @@
           "createdAt": {
             "type": "string",
             "format": "date-time"
+          },
+          "cancelReason": {
+            "type": "string",
+            "nullable": true
+          },
+          "cancelledAt": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "refundAmount": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "refundPercentage": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
           }
         },
         "additionalProperties": false

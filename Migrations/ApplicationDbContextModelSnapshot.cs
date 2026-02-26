@@ -126,12 +126,37 @@ namespace BookMyServiceBE.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ChatMessageId"));
 
+                    b.Property<string>("AttachmentMimeType")
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
+
+                    b.Property<string>("AttachmentName")
+                        .HasMaxLength(260)
+                        .HasColumnType("nvarchar(260)");
+
+                    b.Property<string>("AttachmentPath")
+                        .HasMaxLength(500)
+                        .HasColumnType("nvarchar(500)");
+
+                    b.Property<long?>("AttachmentSize")
+                        .HasColumnType("bigint");
+
                     b.Property<DateTime>("CreatedAt")
                         .HasColumnType("datetime2");
 
+                    b.Property<DateTime?>("DeletedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<bool>("IsDeleted")
+                        .HasColumnType("bit");
+
                     b.Property<string>("MessageText")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(4000)
+                        .HasColumnType("nvarchar(4000)");
+
+                    b.Property<int?>("RecipientUserId")
+                        .HasColumnType("int");
 
                     b.Property<int?>("RelatedBookingId")
                         .HasColumnType("int");
@@ -139,14 +164,19 @@ namespace BookMyServiceBE.Migrations
                     b.Property<int>("SenderRole")
                         .HasColumnType("int");
 
+                    b.Property<DateTime?>("UpdatedAt")
+                        .HasColumnType("datetime2");
+
                     b.Property<int>("UserId")
                         .HasColumnType("int");
 
                     b.HasKey("ChatMessageId");
 
-                    b.HasIndex("RelatedBookingId");
+                    b.HasIndex("RecipientUserId");
 
-                    b.HasIndex("UserId");
+                    b.HasIndex("RelatedBookingId", "CreatedAt");
+
+                    b.HasIndex("UserId", "RecipientUserId", "CreatedAt");
 
                     b.ToTable("ChatMessages");
                 });
@@ -658,6 +688,11 @@ namespace BookMyServiceBE.Migrations
 
             modelBuilder.Entity("BookMyService.Models.ChatMessage", b =>
                 {
+                    b.HasOne("BookMyService.Models.User", "Recipient")
+                        .WithMany()
+                        .HasForeignKey("RecipientUserId")
+                        .OnDelete(DeleteBehavior.Restrict);
+
                     b.HasOne("BookMyService.Models.Booking", "Booking")
                         .WithMany()
                         .HasForeignKey("RelatedBookingId")
@@ -670,6 +705,8 @@ namespace BookMyServiceBE.Migrations
                         .IsRequired();
 
                     b.Navigation("Booking");
+
+                    b.Navigation("Recipient");
 
                     b.Navigation("Sender");
                 });

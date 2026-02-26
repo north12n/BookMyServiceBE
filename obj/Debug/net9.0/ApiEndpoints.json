@@ -665,6 +665,167 @@
     ]
   },
   {
+    "ContainingType": "BookMyServiceBE.Controllers.ChatController",
+    "Method": "SearchContacts",
+    "RelativePath": "api/chat/contacts",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "keyword",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[BookMyServiceBE.Controllers.ChatController\u002BContactSearchItemDto, BookMyServiceBE, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "BookMyServiceBE.Controllers.ChatController",
+    "Method": "GetConversations",
+    "RelativePath": "api/chat/conversations",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[BookMyServiceBE.Controllers.ChatController\u002BConversationItemDto, BookMyServiceBE, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "BookMyServiceBE.Controllers.ChatController",
+    "Method": "SendMessage",
+    "RelativePath": "api/chat/messages",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "req",
+        "Type": "BookMyServiceBE.Controllers.ChatController\u002BSendMessageRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "BookMyServiceBE.Controllers.ChatController\u002BChatMessageDto",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "BookMyServiceBE.Controllers.ChatController",
+    "Method": "EditMessage",
+    "RelativePath": "api/chat/messages/{chatMessageId}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "chatMessageId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "req",
+        "Type": "BookMyServiceBE.Controllers.ChatController\u002BEditMessageRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BookMyServiceBE.Controllers.ChatController",
+    "Method": "DeleteMessage",
+    "RelativePath": "api/chat/messages/{chatMessageId}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "chatMessageId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BookMyServiceBE.Controllers.ChatController",
+    "Method": "GetMessages",
+    "RelativePath": "api/chat/messages/{counterpartUserId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "counterpartUserId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[BookMyServiceBE.Controllers.ChatController\u002BChatMessageDto, BookMyServiceBE, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "BookMyServiceBE.Controllers.ChatController",
+    "Method": "SendAttachment",
+    "RelativePath": "api/chat/messages/upload",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "CounterpartUserId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "MessageText",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "File",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "BookMyServiceBE.Controllers.ChatController\u002BChatMessageDto",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
     "ContainingType": "BookMyServiceBE.Controllers.ComplaintsController",
     "Method": "GetAll",
     "RelativePath": "api/complaints",
